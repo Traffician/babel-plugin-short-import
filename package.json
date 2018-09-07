@@ -1,0 +1,38 @@
+{
+  "name": "babel-plugin-short-import",
+  "version": "1.0.1",
+  "description": "Shorter ES6 imports for Babel",
+  "repository": "Traffician/babel-plugin-short-import",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.49"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/helper-module-imports": "^7.0.0-beta.40",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.40",
+    "@babel/template": "^7.0.0-beta.49",
+    "chalk": "^1.1.0",
+    "clear": "0.0.1",
+    "diff": "^3.2.0",
+    "watch": "^1.0.1"
+  },
+  "scripts": {
+    "release": "babel src --out-dir dist",
+    "test": "node test",
+    "watch": "node test --watch",
+    "prepublish": "npm test && npm run release"
+  },
+  "keywords": [
+    "babel-plugin",
+    "shorthand",
+    "javascript",
+    "es6",
+    "import",
+    "short import"
+  ]
+}
